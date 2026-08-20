@@ -98,7 +98,7 @@ export function Hero({ isDark }: HeroProps) {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => window.open('/DeepakParmarResume.pdf', '_blank')}
+            onClick={() => window.open('Deepak_Parmar_Resume_DotNet.pdf', '_blank')}
             className={`inline-flex items-center justify-center px-8 py-4 rounded-lg font-semibold border-2 transition-all duration-300 ${isDark
               ? 'border-primary-500 text-primary-400 hover:bg-primary-500/10'
               : 'border-primary-500 text-primary-600 hover:bg-primary-50'

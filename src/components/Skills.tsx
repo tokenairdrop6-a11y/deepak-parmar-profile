@@ -8,19 +8,19 @@ export function Skills({ isDark }: SkillsProps) {
   const skillCategories = [
     {
       title: 'Languages & Frameworks',
-      skills: ['C#', '.NET Core', 'ASP.NET MVC', 'Web API', 'WPF', 'Angular 19', 'JavaScript', 'HTML5', 'CSS3', 'LINQ', 'DevExpress']
+      skills: ['C#', '.NET Core', 'ASP.NET MVC', 'Web API', 'WPF', 'Angular 19', 'TypeScript', 'HTML5', 'CSS3', 'LINQ', 'DevExpress']
     },
     {
       title: 'AI & Machine Learning',
-      skills: ['ML.NET', 'Semantic Search', 'Azure AI Search', 'RAG', 'LLM Integration', 'Predictive Modeling', 'AI Agents']
+      skills: ['ML.NET', 'Semantic Search', 'Azure AI Search', 'RAG', 'LLM Integration', 'AI Agents']
     },
     {
       title: 'Database & ORM',
-      skills: ['SQL Server', 'Entity Framework', 'Dapper', 'XPO ORM', 'Azure Cosmos DB', 'Cloud SQL', 'Azure SQL']
+      skills: ['SQL Server', 'Entity Framework', 'Dapper', 'XPO ORM', 'Cloud SQL', 'Azure SQL']
     },
     {
       title: 'Cloud & DevOps',
-      skills: ['Microsoft Azure', 'App Services', 'Blob Storage', 'Azure Functions', 'AKS', 'Azure Monitor', 'Application Insights', 'Google Cloud Platform', 'App Engine', 'GKE', 'Cloud Run', 'Docker', 'CI/CD', 'Kubernetes']
+      skills: ['Microsoft Azure', 'App Services', 'Azure Service Bus', 'Blob Storage', 'Azure Functions', 'AKS', 'Azure Monitor', 'Application Insights', 'Google Cloud Platform', 'App Engine', 'GKE', 'Cloud Run', 'Docker', 'CI/CD', 'GKE']
     },
     {
       title: 'Architecture & Patterns',
@@ -28,7 +28,7 @@ export function Skills({ isDark }: SkillsProps) {
     },
     {
       title: 'Messaging & Background Jobs',
-      skills: ['RabbitMQ', 'Hangfire', 'Azure Service Bus']
+      skills: ['RabbitMQ', 'Hangfire']
     },
     {
       title: 'Testing & Tools',

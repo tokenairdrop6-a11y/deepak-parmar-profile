@@ -35,9 +35,7 @@ export function Education({ isDark }: EducationProps) {
 
   const achievements = [
     'Improved API performance by 65% through Redis caching and SQL optimization',
-    'Delivered migration assessment reports for 20+ enterprise .NET applications',
-    'Integrated Semantic Search (Azure AI Search + RAG) into ERP platform',
-    'Contributed to ERP platforms used by hundreds of users across clothing sector'
+    'Delivered migration assessment reports for 20+ enterprise .NET applications'
   ];
 
   return (
@@ -73,11 +71,10 @@ export function Education({ isDark }: EducationProps) {
                 <motion.div
                   key={index}
                   whileHover={{ y: -2 }}
-                  className={`p-4 rounded-lg border transition-all ${
-                    isDark
+                  className={`p-4 rounded-lg border transition-all ${isDark
                       ? 'bg-neutral-700/30 border-neutral-600/30 hover:border-primary-500/50'
                       : 'bg-neutral-50 border-neutral-200 hover:border-primary-400'
-                  }`}
+                    }`}
                 >
                   <h4 className={`font-semibold mb-1 ${isDark ? 'text-white' : 'text-neutral-900'}`}>
                     {edu.degree}
@@ -106,11 +103,10 @@ export function Education({ isDark }: EducationProps) {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className={`p-8 rounded-xl border ${
-              isDark
+            className={`p-8 rounded-xl border ${isDark
                 ? 'bg-neutral-700/50 border-neutral-600/50'
                 : 'bg-white border-neutral-200'
-            }`}
+              }`}
           >
             <h3 className={`text-2xl font-bold mb-6 ${isDark ? 'text-white' : 'text-neutral-900'}`}>
               Key Achievements

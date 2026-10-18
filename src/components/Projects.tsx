@@ -9,31 +9,32 @@ export function Projects({ isDark }: ProjectsProps) {
     {
       title: 'ERP Platform - Clothing Sector',
       description: 'Scalable microservices-based ERP platform with intelligent search capabilities and high-volume background job processing.',
-      technologies: ['.NET Core', 'Web API', 'Angular', 'Azure AI Search', 'RabbitMQ', 'Hangfire', 'Redis', 'SQL Server'],
+      technologies: ['.NET Core', 'Web API', 'Angular', 'RabbitMQ', 'Hangfire', 'Redis', 'SQL Server'],
       highlights: [
-        'Improved API performance by 65% with caching and optimization',
-        'Integrated Semantic Search with RAG pipeline',
+        'Developed scalable .NET Core microservices applications',
+        'Built responsive Angular UIs and automated jobs with Hangfire.',
         'Increased user capacity 3x through optimization'
       ]
     },
     {
       title: 'Cloud Migration: Azure to GCP',
       description: 'Enterprise-scale cloud migration project covering 20+ .NET applications with comprehensive assessment and modernization.',
-      technologies: ['Azure', 'GCP', 'Docker', 'Kubernetes', 'Cloud SQL', 'DevOps'],
+      technologies: ['Azure', 'GCP', 'Docker', 'Cloud Run', 'Cloud SQL', 'Github Actions'],
       highlights: [
         'Led PoCs for key migration paths',
         'Prepared detailed assessment reports for 20+ applications',
-        'Containerized and deployed on GKE'
+        'Containerized and deployed on Cloud Run'
       ]
     },
     {
-      title: 'Financial Integration System',
-      description: 'Secure third-party payment API integration with QuickBooks for automated financial workflows and operations.',
-      technologies: ['C#', '.NET Core', 'Web API', 'QuickBooks API', 'SQL Server', 'Azure'],
+      title: 'ERP System',
+      description: 'Developed ERP solutions for industrial and manufacturing clients, including PMI Kyoto, YAC Robot Systems, and NS.',
+      technologies: ['C#', '.NET Core', 'WPF', 'Web API', 'QuickBooks API', 'SQL Server'],
       highlights: [
-        'Automated financial workflow processing',
-        'Improved operational efficiency significantly',
-        'Built with enterprise-grade security'
+        'Developed ERP modules for Angular web and WPF desktop applications',
+        'Integrated QuickBooks API to automate financial workflows',
+        'Optimized SQL queries, stored procedures, and LINQ for performance',
+        'Implemented MVVM architecture for maintainable WPF applications'
       ]
     }
   ];
@@ -85,15 +86,13 @@ export function Projects({ isDark }: ProjectsProps) {
               key={index}
               variants={itemVariants}
               whileHover={{ y: -8 }}
-              className={`flex flex-col rounded-xl overflow-hidden border transition-all duration-300 ${
-                isDark
-                  ? 'bg-neutral-800 border-neutral-700 hover:border-primary-500/50'
-                  : 'bg-neutral-50 border-neutral-200 hover:border-primary-400'
-              }`}
+              className={`flex flex-col rounded-xl overflow-hidden border transition-all duration-300 ${isDark
+                ? 'bg-neutral-800 border-neutral-700 hover:border-primary-500/50'
+                : 'bg-neutral-50 border-neutral-200 hover:border-primary-400'
+                }`}
             >
-              <div className={`h-40 bg-gradient-to-br from-primary-500/20 to-secondary-500/20 border-b ${
-                isDark ? 'border-neutral-700' : 'border-neutral-200'
-              } flex items-center justify-center relative overflow-hidden`}>
+              <div className={`h-40 bg-gradient-to-br from-primary-500/20 to-secondary-500/20 border-b ${isDark ? 'border-neutral-700' : 'border-neutral-200'
+                } flex items-center justify-center relative overflow-hidden`}>
                 <div className="absolute inset-0 opacity-20">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary-500 to-secondary-500"></div>
                 </div>
@@ -127,11 +126,10 @@ export function Projects({ isDark }: ProjectsProps) {
                     {project.technologies.map((tech, tIndex) => (
                       <span
                         key={tIndex}
-                        className={`px-2 py-1 rounded text-xs font-medium ${
-                          isDark
-                            ? 'bg-primary-900/30 text-primary-300 border border-primary-700/50'
-                            : 'bg-primary-100 text-primary-700 border border-primary-300'
-                        }`}
+                        className={`px-2 py-1 rounded text-xs font-medium ${isDark
+                          ? 'bg-primary-900/30 text-primary-300 border border-primary-700/50'
+                          : 'bg-primary-100 text-primary-700 border border-primary-300'
+                          }`}
                       >
                         {tech}
                       </span>

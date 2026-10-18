@@ -13,12 +13,12 @@ export function Experience({ isDark }: ExperienceProps) {
       location: 'Ahmedabad, Gujarat',
       period: 'Feb 2025 – Present',
       highlights: [
-        'Leading enterprise cloud migration (Azure to GCP) using lift-and-shift and modernization approaches',
-        'Led PoCs for 20+ .NET applications migration covering readiness, risks, and effort estimates',
-        'Containerized applications using Docker and deployed on GKE for improved scalability',
-        'Developed scalable microservices-based ERP platform using .NET Core Web API and RabbitMQ',
-        'Integrated Semantic Search with Azure AI Search and RAG pipeline for intelligent product lookup',
-        'Improved API performance by 65% through Redis caching and SQL query optimization'
+        'Modernizing legacy .NET Framework applications to .NET Core to improve application maintainability, scalability, performance, and cloud compatibility.',
+        'Migrating and deploying modernized .NET applications from Microsoft Azure to Google Cloud Platform (GCP), primarily using Cloud Run.',
+        'Implementing CI/CD pipelines using GitHub Actions to automate application builds, deployments, and release workflows for GCP environments.',
+        'Integrating GCP services, including Secret Manager (GSM), Pub/Sub, Cloud Storage, and Cloud Run functions, to support secure configuration management, asynchronous messaging, file storage, and event-driven processing.',
+        'Analyzed existing Azure services, application dependencies, integrations, and data flows to map suitable GCP alternatives, while developing and validating migration PoCs to address framework compatibility, configuration, dependency management, and deployment challenges.',
+        'Supporting end-to-end application modernization and cloud deployment activities, troubleshooting migration issues, and ensuring successful application deployment on GCP.'
       ]
     },
     {
@@ -94,19 +94,16 @@ export function Experience({ isDark }: ExperienceProps) {
             <motion.div
               key={index}
               variants={itemVariants}
-              className={`relative pl-6 pb-8 ${index !== experiences.length - 1 ? 'border-l-2' : ''} ${
-                isDark ? 'border-primary-500/30' : 'border-primary-300'
-              }`}
+              className={`relative pl-6 pb-8 ${index !== experiences.length - 1 ? 'border-l-2' : ''} ${isDark ? 'border-primary-500/30' : 'border-primary-300'
+                }`}
             >
-              <div className={`absolute -left-4 top-0 w-6 h-6 rounded-full border-4 ${
-                isDark ? 'bg-neutral-800 border-primary-500' : 'bg-white border-primary-500'
-              }`}></div>
+              <div className={`absolute -left-4 top-0 w-6 h-6 rounded-full border-4 ${isDark ? 'bg-neutral-800 border-primary-500' : 'bg-white border-primary-500'
+                }`}></div>
 
-              <div className={`p-6 rounded-xl border transition-all duration-300 hover:shadow-lg ${
-                isDark
-                  ? 'bg-neutral-700/50 border-neutral-600/50 hover:border-primary-500/50'
-                  : 'bg-white border-neutral-200 hover:border-primary-400'
-              }`}>
+              <div className={`p-6 rounded-xl border transition-all duration-300 hover:shadow-lg ${isDark
+                ? 'bg-neutral-700/50 border-neutral-600/50 hover:border-primary-500/50'
+                : 'bg-white border-neutral-200 hover:border-primary-400'
+                }`}>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex-1">
                     <h3 className={`text-2xl font-bold mb-2 ${isDark ? 'text-white' : 'text-neutral-900'}`}>
